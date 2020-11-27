@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FIȘĂ DE LUCRU: INFORMATICĂ APLICATĂ UNIT2</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+
+<h1>Mihu Daniel-Florin</h1>
+<a href="Mihu.Fl.Daniel@utcluj.didatec.ro">Mihu.Fl.Daniel@utcluj.didatec.ro</a>
+<h3><b><i>Specificatii tehnice ale statiei principale de lucru</b></i></h3>
+
+<div class="myDiv">
+<h3><b><i>Structura Retelei</b></i></h3>
+<img id="img" width="500" height="303" src="img.PNG">
+
+<h3><b><i>Cracteristici Conexiune retea</b></i></h3>
+
+<ul1>
+  <li>Adresa fizia(MAC): C8-3D-D4-6D-1E-75</li>
+  <li>Adresa IPv4: 192.168.0.193</li>
+  <li>Debit download:41.71 Mbit/s </li>
+  <li>Debit upload: 24,41 Mbit/s</li>
+</ul1> 
+</div>
+<h3><b><i>Specificatii tehnice ale statiei principale de lucru</b></i></h3>
+
+<table style="width:60%">
+  <tr>
+    <th>Denumire</th>
+    <th>Producator</th> 
+	<th>Parametri</th>
+  </tr>
+  <tr>
+    <td>Procesor AMD Ryzen 5 1500x </td>
+    <td> AMD </td>
+	<td><ul> <li> Frecventa nominala:	3.5</li>
+	         <li> Numar nuclee:	4</li>
+			 <li> Arhitectura:	Ryzen</li>
+			
+	</ul></td>
+  </tr>
+  <tr>
+    <td>Placa Video : nVidia GeForce GTX 1060</td>
+    <td>nVIDIA</td>
+	<td><ul> <li> Model placa video:	1060</li>
+	         <li> Tip placa video:	Dedicata</li>
+			 <li> Capacitate memorie video:	3GB</li>
+			 <li> Tehnologii placa video:	DirectX 12 GeForce Experience</li>
+	</ul></td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td>BENQ</td>
+	<td><ul> <li> Diagonala display:	24 INCH</li>
+	         <li> Rezolutie:	1920 x 1080</li>
+			 <li> Format display:	Full HD</li>
+			 <li> Refresh rate:  144hz</li>
+	</ul></td>
+  </tr>
+</table>
+<h3 ondblclick="showSlides()"> Utilizarea resurselor</h3>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+ <img id="imag" width="400" height="203" src="a.png">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+ <img id="imag"width="400" height="203" src="b.png">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+ <img id="imag" width="400" height="203"src="c.png">
+ </div>
+ <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+ 
+ 
+ <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>
